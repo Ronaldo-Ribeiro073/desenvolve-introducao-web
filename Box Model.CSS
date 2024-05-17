@@ -86,8 +86,10 @@ header {
     list-style: none; /* Remove bullets */
     padding: 0;
 }
-
-.menu li {
+aside ul{ 
+    list-style-type: none;
+}
+aside ul li {
     margin-bottom: 1em; /* Espaçamento entre itens */
     text-align: center; /* Centraliza itens */
 }
