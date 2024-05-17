@@ -1,6 +1,6 @@
 /* Seletores.css */
 
-/* 1. Mudar as cores dos links */
+/* 1. Muda a cor dos links */
 a {
     color: red;
 }
@@ -8,7 +8,7 @@ a:hover {
     color: lime;
 }
 
-/* 2. Customizar parágrafos */
+/* 2. Customiza parágrafos */
 p {
     font-family: Arial, sans-serif;
 }
@@ -16,7 +16,7 @@ h1 + p {
     font-weight: bold;
 }
 
-/* 3. Estilizar a classe .destaque */
+/* 3. Estiliza a classe .destaque */
 .destaque {
     font-family: Arial, sans-serif;
 }
