@@ -1,0 +1,24 @@
+
+/* 1. Definindo .page-wrapper como referência para posicionamento */
+.page-wrapper {
+    position: relative;
+}
+
+/* 2. Estilizando o painel .explanation */
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    border-right: 1px solid #1f295c;
+    padding-right: 2%;
+}
+
+/* 3. Movendo o menu de designs para a direita da página */
+#design-selection {
+    position: absolute;
+    top: 400px; /* Iniciar na parte superior da página */
+    left: 62%; /* Iniciar após o elemento .explanation */
+    padding-left:2%; padding-right:2% /* Espaçamento interno horizontal para centralizar */
+
+}
+
+.main footer{ margin: 4%;}
