@@ -1,0 +1,213 @@
+html { 
+    background-color: #E0BC3A;
+    color: #0f0f72;
+}
+
+a {
+    color: #6e2ef7;
+}
+
+a:hover {
+    color: #636667;
+}
+.main p:first-of-type::first-letter{ /* Destaca a primeira Letra*/
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+}
+
+.design-selection li{
+    border-top: #0b0b22 solid 1px;
+}
+
+.design-selection li:last-of-type {
+
+    border-top: #0b0b22 solid 1px
+
+}
+   
+abbr {
+    color: aliceblue;
+}
+
+/* Estilos Gerais */
+body {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto; /* Centraliza a página */
+    font-family: sans-serif; /* Fonte do tipo sans-serif */
+}
+
+#introduction {
+    height: 550px;
+}
+
+#design-archives {
+    display: none; /* Remove o container design-archives */
+}
+
+p {
+    text-indent: 1em; /* Indentar os parágrafos em 1em */
+}
+
+/* Estilos para Títulos */
+header h1 {
+    margin-right: 1em; /* Espaçamento lateral */
+    display: inline; /* Para lado a lado */
+}
+
+header h2 {
+    display: inline; /* Para lado a lado */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center; /* Alinhar todos os títulos para o centro */
+}
+
+h1 {
+    font-size: 1.8rem; /* Tamanho do h1 */
+}
+
+h2 {
+    font-size: 1.4rem; /* Tamanho do h2 */
+}
+
+h3 {
+    font-size: 1.2rem; /* Tamanho do h3 */
+}
+
+/* Seção de Resumo e Principal */
+.summary {
+    text-align: center; /* Alinhamento da seção de resumo */
+}
+
+.main {
+    line-height: 1.5; /* Espaçamento entre as linhas para os parágrafos da seção principal */
+}
+
+/* Estilos para Abreviaturas */
+abbr {
+    font-variant: small-caps; /* Fonte em small-caps para abreviaturas */
+    color: aliceblue; /* Incluído para garantir a cor */
+}
+
+header {
+    background-color: #0b0b22; /* Fundo escuro */
+    color: #E0BC3A; /* Fonte clara */
+    padding: 1em;
+}
+
+.menu {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+}
+aside ul{ 
+    list-style-type: none;
+}
+aside ul li {
+    margin-bottom: 1em; /* Espaçamento entre itens */
+    text-align: center; /* Centraliza itens */
+}
+
+footer {
+    background-color: #0b0b22; /* Fundo escuro */
+    color: #E0BC3A; /* Fonte clara */
+    padding: 1em;
+    margin-top: 4%; /* Espaçamento externo */
+}
+
+footer a {
+    border: 2px solid aliceblue; /* Borda sólida */
+    padding: 0.5em; /* Espaçamento interno */
+    display: inline-block; /* Para permitir borda e padding */
+    color: #E0BC3A; /* Cor do texto */
+}
+ 
+
+
+/* 1. Definindo .page-wrapper como referência para posicionamento */
+.page-wrapper {
+    position: relative;
+}
+
+/* 2. Estilizando o painel .explanation */
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    padding-right: 2%;
+}
+
+/* 3. Movendo o menu de designs para a direita da página */
+#design-selection {
+    position: static;
+    top: 380px; /* Iniciar na parte superior da página */
+    left: 62%; /* Iniciar após o elemento .explanation */
+    padding-left:2%; padding-right:2% /* Espaçamento interno horizontal para centralizar */
+
+}
+
+.supporting footer { 
+display: flex;
+justify-content: space-evenly;
+}
+.benefits {
+display: flex;
+ border-top: #1f295c solid;
+}
+.benefits h3{
+   order: 2; 
+   align-self: center;
+}
+.benefits p {
+    flex-basis: 70%;
+    
+}
+.participation{
+    display: flex;
+    flex-wrap: wrap;
+}
+.participation h3,.participation p {
+
+    flex-basis: 50%;
+}
+.participation h3{
+    align-self: center;
+}
+
+@media screen and (max-width: 768px ) {
+    .design-selection{ 
+        position: static;
+        width: 100%;      
+    }
+   .explanation{
+    border-right: none;
+    width: 100%;
+   } 
+   #zen-intro{
+    height: auto;
+   }
+   .participation{
+    flex-direction: column;
+   }
+   p{ 
+    text-indent: 0;
+   }
+}
+
+@media print{
+    html{ 
+        font-family: 'Times New Roman', Times, serif;
+    }
+#zen-intro header{
+    background-color: aliceblue;
+    color: #0b0b22;
+}
+.design-selection{ 
+    position: static;
+    width: 100%;      
+}
+.explanation{
+border-right: none;
+width: 100%;
+} 
+}
