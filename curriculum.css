@@ -1,0 +1,214 @@
+/* Definindo as fontes */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+   color: black; 
+}
+h1{
+    color: #333;
+}
+    
+
+/* Paleta de cores */
+:root {
+    --cor-principal: royalblue;
+    --cor-secundaria: aliceblue;
+    --cor-destaque: goldenrod;
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header .profile-picture img {
+    background-color: black;
+    border-radius: 70%;
+    width: 200px;;
+    height: 200px;
+}
+
+header .contact-info,
+header .introduction {
+    margin-top: 10px;
+}
+.introduction{
+    text-align: justify;
+}
+.contact-info>p{
+    display: flex;
+    text-align: left;
+}
+
+/* Estilo da navegação */
+nav {
+    background-color: var(--cor-principal);
+    color: goldenrod;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Estilo das seções */
+
+section {
+    padding: 20px;
+    margin-top: 50px; /* Espaço para o menu fixo */
+}
+
+/* Estilo dos containers */
+.education-item,
+.certification-item,
+.experience-item {
+    position: static;
+    background: goldenrod;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-destaque);
+    color: royalblue;
+    text-align: center;
+    padding: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+/* Estilo dos links*/
+
+a{  color: royalblue;
+
+}
+a:hover{ 
+    color: aqua;
+
+}
+a:visited{
+    color: aliceblue;
+}
+nav a:hover{
+    color: aqua
+}
+/* Layouts responsivos */
+@media (max-width: 780px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    header {
+        text-align: left;
+        padding: 10px;
+    }
+
+    header .profile-picture,
+    header .contact-info,
+    header .introduction {
+        display: flex;
+        text-align: left;
+        padding-top: 20%;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#educacao {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#educacao h2 {
+    text-align: center;
+    color: #333;
+}
+
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.education-table th, .education-table td {
+    border: 2.5px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.education-table th {
+    background-color: goldenrod;
+    color: black;
+}
+
+.education-table tr:nth-child(even) {
+    background-color:whitesmoke;
+}
+
+   .habilidades ul li {
+        margin: 10px 0;
+        padding: 10px;
+        background-color: aliceblue;
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: 18px;
+        color: #333;
+    }
+
+
+
+@media print{
+    html{ 
+        font-family: 'Times New Roman', Times, serif;
+        background-color: aliceblue;
+        color: black}
+ .experiencia{
+    padding-top: 100px;
+ }
+ #print {
+display: none;
+ }
+} 
