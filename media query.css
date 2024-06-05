@@ -138,8 +138,8 @@ footer a {
 }
 
 /* 3. Movendo o menu de designs para a direita da página */
-#design-selection {
-    position: static;
+.design-selection {
+    position: absolute;
     top: 380px; /* Iniciar na parte superior da página */
     left: 62%; /* Iniciar após o elemento .explanation */
     padding-left:2%; padding-right:2% /* Espaçamento interno horizontal para centralizar */
@@ -182,6 +182,7 @@ display: flex;
    .explanation{
     border-right: none;
     width: 100%;
+
    } 
    #zen-intro{
     height: auto;
@@ -202,7 +203,7 @@ display: flex;
     background-color: aliceblue;
     color: #0b0b22;
 }
-.design-selection{ 
+#design-selection{ 
     position: static;
     width: 100%;      
 }
